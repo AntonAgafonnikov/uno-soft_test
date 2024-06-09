@@ -1,34 +1,22 @@
 package ru.uno_soft;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.TreeSet;
 
-import static ru.uno_soft.file.in.InBufferReader.groupMergeHashMap;
 import static ru.uno_soft.file.in.InBufferReader.readFromFile;
-import static ru.uno_soft.repository.GroupRepository.getGroupLinesHashMap;
-import static ru.uno_soft.service.ProcessingLineService.*;
+import static ru.uno_soft.service.SortGroupsService.sortGroups;
 
 public class Main {
+    //-Xmx1G
     public static void main(String[] args) {
-        readFromFile(new File("src/main/resources/test.txt"));
+        long startTime = System.currentTimeMillis();
+
+        //readFromFile(new File("src/main/resources/lng.txt"));
+        readFromFile(new File("src/main/resources/lng-big.csv"));
+
         sortGroups();
+        //writeToFile(new File("src/main/resources/result.txt"));
 
-        for (Map.Entry<Integer, TreeSet<Integer>> entry : groupMergeHashMap.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
-
-        System.out.println("---------");
-
-        for (Map.Entry<Integer, TreeSet<Integer>> entry : sortedGroupMergeHashMap.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
-
-//        System.out.println("---------");
-//        for (Map.Entry<Integer, ArrayList<String>> entry : getGroupLinesHashMap().entrySet()) {
-//            System.out.println(entry.getKey() + ": " + entry.getValue());
-//        }
+        System.out.println("Время выполнения: " + (System.currentTimeMillis() - startTime) / 1000 + "с");
 
     }
 }

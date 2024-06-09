@@ -1,17 +1,16 @@
 package ru.uno_soft.repository;
 
 import java.util.ArrayList;
-import java.util.TreeMap;
 
 public class GroupRepository {
-    private static TreeMap<Integer, ArrayList<String>> groupLinesHashMap;
+    private static ArrayList<String> groupLinesHashMap;
 
     private GroupRepository() {
     }
 
-    public static synchronized TreeMap<Integer, ArrayList<String>> getGroupLinesHashMap() {
+    public static synchronized ArrayList<String> getGroupLinesHashMap() {
         if (groupLinesHashMap == null) {
-            groupLinesHashMap = new TreeMap<>();
+            groupLinesHashMap = new ArrayList<>();
         }
         return groupLinesHashMap;
     }

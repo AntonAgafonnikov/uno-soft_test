@@ -5,27 +5,10 @@ import java.util.Objects;
 public class Record {
     private String value;
     private int index;
-    private int group;
 
     public Record(String value, int index) {
         this.value = value;
         this.index = index;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public int getIndex() {
-        return index;
-    }
-
-    public int getGroup() {
-        return group;
-    }
-
-    public void setGroup(int group) {
-        this.group = group;
     }
 
     @Override

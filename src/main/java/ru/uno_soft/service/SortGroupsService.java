@@ -1,11 +1,13 @@
 package ru.uno_soft.service;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import static ru.uno_soft.service.ProcessLineService.groupMergeHashMap;
 
 public class SortGroupsService {
-    public static HashMap<Integer, ArrayList<Integer>> sortedGroupMergeHashMap; //TODO private
+    public static HashMap<Integer, ArrayList<Integer>> sortedGroupMergeHashMap;
 
     public static void sortGroups() {
         sortedGroupMergeHashMap = new HashMap<>(groupMergeHashMap);
@@ -15,8 +17,6 @@ public class SortGroupsService {
             if (!entry.getValue().equals(newValueSet))
                 sortedGroupMergeHashMap.put(entry.getKey(), newValueSet);
         }
-
-        System.out.println("Количество групп: " + sortedGroupMergeHashMap.size()); // TODO
         System.out.println("Сортировка групп завершена");
     }
 

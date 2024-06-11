@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="uno-soft_test:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/uno_soft_test_jar</output-path>
+    <root id="archive" name="uno-soft_test.jar">
+      <element id="module-output" name="uno-soft_test" />
+    </root>
+  </artifact>
+</component>

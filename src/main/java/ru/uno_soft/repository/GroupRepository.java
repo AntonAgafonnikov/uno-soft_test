@@ -3,15 +3,15 @@ package ru.uno_soft.repository;
 import java.util.ArrayList;
 
 public class GroupRepository {
-    private static ArrayList<String> groupLinesHashMap;
+    private static ArrayList<String> linesList;
 
     private GroupRepository() {
     }
 
-    public static synchronized ArrayList<String> getGroupLinesHashMap() {
-        if (groupLinesHashMap == null) {
-            groupLinesHashMap = new ArrayList<>();
+    public static synchronized ArrayList<String> getLinesList() {
+        if (linesList == null) {
+            linesList = new ArrayList<>();
         }
-        return groupLinesHashMap;
+        return linesList;
     }
 }

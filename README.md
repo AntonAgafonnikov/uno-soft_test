@@ -6,7 +6,7 @@
 
 Скриншоты из VisualVM и терминала:
   ![VisualVM](screenshots/ScreenVM1.jpg)
-  ![Terminal](Screenshots/ScreenTerm1.jpg)
+  ![Terminal](screenshots/ScreenTerm1.jpg)
 
 ### Для файла `lng-big.csv`:
 - Число групп с более чем одним элементом: **105036**;
@@ -14,7 +14,7 @@
 
 Скриншоты из VisualVM и терминала:
   ![VisualVM](screenshots/ScreenVM2.jpg)
-  ![Terminal](Screenshots/ScreenTerm2.jpg)
+  ![Terminal](screenshots/ScreenTerm2.jpg)
 ---
 
 ## Краткое описания алгоритма решения

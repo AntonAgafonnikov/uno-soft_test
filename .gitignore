@@ -2,7 +2,8 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-!**/src/main/resources/lng-big.csv
+src/main/resources/lng-big.csv
+
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
